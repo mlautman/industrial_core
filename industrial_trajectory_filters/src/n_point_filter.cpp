@@ -100,7 +100,7 @@ template<typename T>
       for (int i = 1; i <= intermediate_points; i++)
       {
         int int_point_index = int(double(i) * int_point_increment);
-        ROS_INFO_STREAM("Intermediate point index: " << int_point_index);
+        ROS_DEBUG_STREAM("Intermediate point index: " << int_point_index);
         trajectory_out.request.trajectory.points.push_back(trajectory_in.request.trajectory.points[int_point_index]);
       }
 
